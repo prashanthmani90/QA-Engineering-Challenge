@@ -1,0 +1,32 @@
+{
+  "name": "qa-engineering-challenge",
+  "version": "1.0.0",
+  "description": "E2E Cypress Testing setup for Frontend and API Testing",
+  "main": "index.js",
+  "scripts": {
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
+    "generate:api": "swagger-typescript-api -p https://petstore.swagger.io/v2/swagger.yaml -o src/api",
+    "cypress:spec": "npx cypress run --spec 'cypress/e2e/*.cy.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashanthmani90/QA-Engineering-Challenge.git"
+  },
+  "keywords": [
+    "Cypress",
+    "Frontend",
+    "API"
+  ],
+  "author": "Prashanth Mani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prashanthmani90/QA-Engineering-Challenge/issues"
+  },
+  "homepage": "https://github.com/prashanthmani90/QA-Engineering-Challenge#readme",
+  "devDependencies": {
+    "cypress": "^12.11.0",
+    "swagger-typescript-api": "^12.0.4",
+    "typescript": "^5.0.4"
+  }
+}
